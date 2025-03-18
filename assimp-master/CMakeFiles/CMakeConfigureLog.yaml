@@ -1,0 +1,621 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 2025-01-30 05:43:02.
+      Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.88
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 2025-01-30 05:43:03.
+      Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.61
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-mgomz7"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-mgomz7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-mgomz7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88709.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:04.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-mgomz7\\cmTC_88709.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_88709.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-mgomz7\\Debug\\".
+          Creating directory "cmTC_88709.dir\\Debug\\cmTC_88709.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_88709.dir\\Debug\\cmTC_88709.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88709.dir\\Debug\\\\" /Fd"cmTC_88709.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CMakeCCompilerABI.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88709.dir\\Debug\\\\" /Fd"cmTC_88709.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-mgomz7\\Debug\\cmTC_88709.exe" /INCREMENTAL /ILK:"cmTC_88709.dir\\Debug\\cmTC_88709.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-mgomz7/Debug/cmTC_88709.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-mgomz7/Debug/cmTC_88709.lib" /MACHINE:X64  /machine:x64 cmTC_88709.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_88709.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-mgomz7\\Debug\\cmTC_88709.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_88709.dir\\Debug\\cmTC_88709.tlog\\unsuccessfulbuild".
+          Touching "cmTC_88709.dir\\Debug\\cmTC_88709.tlog\\cmTC_88709.lastbuildstate".
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-mgomz7\\cmTC_88709.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.31.31105.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-j4ebwp"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-j4ebwp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-j4ebwp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5d2c4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:06.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-j4ebwp\\cmTC_5d2c4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5d2c4.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-j4ebwp\\Debug\\".
+          Creating directory "cmTC_5d2c4.dir\\Debug\\cmTC_5d2c4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5d2c4.dir\\Debug\\cmTC_5d2c4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d2c4.dir\\Debug\\\\" /Fd"cmTC_5d2c4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d2c4.dir\\Debug\\\\" /Fd"cmTC_5d2c4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-j4ebwp\\Debug\\cmTC_5d2c4.exe" /INCREMENTAL /ILK:"cmTC_5d2c4.dir\\Debug\\cmTC_5d2c4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-j4ebwp/Debug/cmTC_5d2c4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-j4ebwp/Debug/cmTC_5d2c4.lib" /MACHINE:X64  /machine:x64 cmTC_5d2c4.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_5d2c4.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-j4ebwp\\Debug\\cmTC_5d2c4.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_5d2c4.dir\\Debug\\cmTC_5d2c4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5d2c4.dir\\Debug\\cmTC_5d2c4.tlog\\cmTC_5d2c4.lastbuildstate".
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-j4ebwp\\cmTC_5d2c4.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.60
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:106 (PROJECT)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.31.31105.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:35 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-a0diei"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-a0diei"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-a0diei'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_251fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:07.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\cmTC_251fe.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_251fe.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\Debug\\".
+          Creating directory "cmTC_251fe.dir\\Debug\\cmTC_251fe.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_251fe.dir\\Debug\\cmTC_251fe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_251fe.dir\\Debug\\\\" /Fd"cmTC_251fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_251fe.dir\\Debug\\\\" /Fd"cmTC_251fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\Debug\\cmTC_251fe.exe" /INCREMENTAL /ILK:"cmTC_251fe.dir\\Debug\\cmTC_251fe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-a0diei/Debug/cmTC_251fe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-a0diei/Debug/cmTC_251fe.lib" /MACHINE:X64  /machine:x64 cmTC_251fe.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_251fe.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\Debug\\cmTC_251fe.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_251fe.dir\\Debug\\cmTC_251fe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_251fe.dir\\Debug\\cmTC_251fe.tlog\\cmTC_251fe.lastbuildstate".
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-a0diei\\cmTC_251fe.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.62
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:36 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-wu0cb1"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-wu0cb1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-wu0cb1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0938b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:08.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\cmTC_0938b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0938b.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\Debug\\".
+          Creating directory "cmTC_0938b.dir\\Debug\\cmTC_0938b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0938b.dir\\Debug\\cmTC_0938b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0938b.dir\\Debug\\\\" /Fd"cmTC_0938b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0938b.dir\\Debug\\\\" /Fd"cmTC_0938b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\Debug\\cmTC_0938b.exe" /INCREMENTAL /ILK:"cmTC_0938b.dir\\Debug\\cmTC_0938b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-wu0cb1/Debug/cmTC_0938b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-wu0cb1/Debug/cmTC_0938b.lib" /MACHINE:X64  /machine:x64 cmTC_0938b.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_0938b.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\Debug\\cmTC_0938b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_0938b.dir\\Debug\\cmTC_0938b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0938b.dir\\Debug\\cmTC_0938b.tlog\\cmTC_0938b.lastbuildstate".
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-wu0cb1\\cmTC_0938b.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.61
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:37 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-00o1yc"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-00o1yc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-00o1yc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b58b4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:09.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\cmTC_b58b4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b58b4.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\Debug\\".
+          Creating directory "cmTC_b58b4.dir\\Debug\\cmTC_b58b4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b58b4.dir\\Debug\\cmTC_b58b4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b58b4.dir\\Debug\\\\" /Fd"cmTC_b58b4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b58b4.dir\\Debug\\\\" /Fd"cmTC_b58b4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\CheckIncludeFile.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\Debug\\cmTC_b58b4.exe" /INCREMENTAL /ILK:"cmTC_b58b4.dir\\Debug\\cmTC_b58b4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-00o1yc/Debug/cmTC_b58b4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-00o1yc/Debug/cmTC_b58b4.lib" /MACHINE:X64  /machine:x64 cmTC_b58b4.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_b58b4.vcxproj -> C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\Debug\\cmTC_b58b4.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b58b4.dir\\Debug\\cmTC_b58b4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b58b4.dir\\Debug\\cmTC_b58b4.tlog\\cmTC_b58b4.lastbuildstate".
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-00o1yc\\cmTC_b58b4.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.68
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "contrib/zlib/CMakeLists.txt:55 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-rswyu2"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-rswyu2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-rswyu2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bb48d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:10.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_bb48d.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\Debug\\".
+          Creating directory "cmTC_bb48d.dir\\Debug\\cmTC_bb48d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_bb48d.dir\\Debug\\cmTC_bb48d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bb48d.dir\\Debug\\\\" /Fd"cmTC_bb48d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          OFF64_T.c
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bb48d.dir\\Debug\\\\" /Fd"cmTC_bb48d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c"
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-rswyu2\\cmTC_bb48d.vcxproj]
+        
+            0 Warning(s)
+            5 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-zvgytq"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-zvgytq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-zvgytq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_36595.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:10.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_36595.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\Debug\\".
+          Creating directory "cmTC_36595.dir\\Debug\\cmTC_36595.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_36595.dir\\Debug\\cmTC_36595.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_36595.dir\\Debug\\\\" /Fd"cmTC_36595.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_36595.dir\\Debug\\\\" /Fd"cmTC_36595.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\Debug\\cmTC_36595.exe" /INCREMENTAL /ILK:"cmTC_36595.dir\\Debug\\cmTC_36595.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-zvgytq/Debug/cmTC_36595.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-zvgytq/Debug/cmTC_36595.lib" /MACHINE:X64  /machine:x64 cmTC_36595.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj]
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\Debug\\cmTC_36595.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj]
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj]
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\Debug\\cmTC_36595.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-zvgytq\\cmTC_36595.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.57
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:72 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-ivwfvi"
+      binary: "C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-ivwfvi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/axelo/OneDrive/Dokument/assimp-master/cmake-modules"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/axelo/OneDrive/Dokument/assimp-master/CMakeFiles/CMakeScratch/TryCompile-ivwfvi'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2e027.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Microsoft (R) Build Engine version 17.1.0+ae57d105c for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 2025-01-30 05:43:11.
+        Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\cmTC_2e027.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2e027.dir\\Debug\\".
+          Creating directory "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\Debug\\".
+          Creating directory "cmTC_2e027.dir\\Debug\\cmTC_2e027.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2e027.dir\\Debug\\cmTC_2e027.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2e027.dir\\Debug\\\\" /Fd"cmTC_2e027.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.31.31105 for x64
+          CheckIncludeFile.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2e027.dir\\Debug\\\\" /Fd"cmTC_2e027.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\CheckIncludeFile.c"
+        C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\cmTC_2e027.vcxproj]
+        Done Building Project "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\cmTC_2e027.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\cmTC_2e027.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\axelo\\OneDrive\\Dokument\\assimp-master\\CMakeFiles\\CMakeScratch\\TryCompile-ivwfvi\\cmTC_2e027.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.40
+        
+      exitCode: 1
+...

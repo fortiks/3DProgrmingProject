@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{5ae97e58-0c7b-4187-bd50-772324b50f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics Classes">
+      <UniqueIdentifier>{90238aea-3f0b-4a9e-ad8b-c019a673d846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics Classes">
+      <UniqueIdentifier>{ec073f1c-d4dd-4cc2-8a09-4e31b3011177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Buffer Classes">
+      <UniqueIdentifier>{e60ef069-3603-437d-88a6-7b2a81aa29f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffer Classes">
+      <UniqueIdentifier>{d8676fa4-00d3-4fea-af9b-4310f4ab1eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility Classes">
+      <UniqueIdentifier>{304b2176-d595-4b80-9d0f-e9eb7e48339a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility Classes">
+      <UniqueIdentifier>{cc666c8b-70d5-4afe-8331-14fe01b9536e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Texture Classes">
+      <UniqueIdentifier>{0a52606c-08ad-463d-8ba0-633096090008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Texture Classes">
+      <UniqueIdentifier>{7435b7c2-d4dd-49a1-bcac-ea90f35a33d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Obj parsed Classes">
+      <UniqueIdentifier>{e59564df-ff2c-4f15-a165-537eff7d3469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Obj parsed Classes">
+      <UniqueIdentifier>{a189aea7-58a4-4c7b-a229-5b0475cd519f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\stb">
+      <UniqueIdentifier>{4de2ecda-fd02-4844-ae7d-687eabbdbcd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lights">
+      <UniqueIdentifier>{076f43ab-b4b0-4cb7-a271-027b901cda4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lights">
+      <UniqueIdentifier>{3a5b0373-5e9f-4ec0-9861-c082dab7b02c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\depthpass">
+      <UniqueIdentifier>{016cd2a6-1636-4837-80ae-2e837546a743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\mainPass">
+      <UniqueIdentifier>{9af652dd-edaa-4af8-abf1-e9a7a2fc00d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ParticlePipeline">
+      <UniqueIdentifier>{551c280e-cbcf-409f-b464-4b8073eac353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\cubeMappingPipeline">
+      <UniqueIdentifier>{291519bb-496d-41ce-928c-eec592ecd1c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayoutD3D11.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderD3D11.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetD3D11.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBufferD3D11.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHelper.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBufferD3D11.cpp">
+      <Filter>Source Files\Buffer Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBufferD3D11.cpp">
+      <Filter>Source Files\Buffer Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBufferD3D11.cpp">
+      <Filter>Source Files\Buffer Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowRenderer.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Utility Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SamplerD3D11.cpp">
+      <Filter>Source Files\Texture Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderResourceTextureD3D11.cpp">
+      <Filter>Source Files\Texture Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneD3D11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsedData.cpp">
+      <Filter>Source Files\Obj parsed Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SubMeshd3d11.cpp">
+      <Filter>Source Files\Obj parsed Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraD3D11.cpp">
+      <Filter>Source Files\Utility Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Meshd3d11.cpp">
+      <Filter>Source Files\Obj parsed Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredRendering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StructuredBufferD3D11.cpp">
+      <Filter>Source Files\Buffer Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLightCollectionD3D11.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLightCollectionD3D11.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="CubicMappingD3D11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemD3D11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frustumRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShaderCubeMapping.hlsl">
+      <Filter>Resource Files\cubeMappingPipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShaderCubeMapping.hlsl">
+      <Filter>Resource Files\cubeMappingPipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShaderDepthPass.hlsl">
+      <Filter>Resource Files\depthpass</Filter>
+    </FxCompile>
+    <FxCompile Include="ComputerShader.hlsl">
+      <Filter>Resource Files\mainPass</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Resource Files\mainPass</Filter>
+    </FxCompile>
+    <FxCompile Include="TessellationDomainShader.hlsl">
+      <Filter>Resource Files\mainPass</Filter>
+    </FxCompile>
+    <FxCompile Include="TessellationHullShader.hlsl">
+      <Filter>Resource Files\mainPass</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Resource Files\mainPass</Filter>
+    </FxCompile>
+    <FxCompile Include="ComputeShaderCubemaping.hlsl">
+      <Filter>Resource Files\cubeMappingPipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="ComputeShaderParticleSystem.hlsl">
+      <Filter>Resource Files\ParticlePipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShaderParticleSystems.hlsl">
+      <Filter>Resource Files\ParticlePipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="GeometryShaderParticleSystem.hlsl">
+      <Filter>Resource Files\ParticlePipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShaderParticleSystem.hlsl">
+      <Filter>Resource Files\ParticlePipeline</Filter>
+    </FxCompile>
+    <FxCompile Include="frustumVertexShader.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="frustumPixelShader.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\backends\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\backends\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\imgui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayoutD3D11.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderD3D11.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowRenderer.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetD3D11.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferD3D11.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowHelper.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferD3D11.h">
+      <Filter>Header Files\Buffer Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBufferD3D11.h">
+      <Filter>Header Files\Buffer Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBufferD3D11.h">
+      <Filter>Header Files\Buffer Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Utility Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplerD3D11.h">
+      <Filter>Header Files\Texture Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderResourceTextureD3D11.h">
+      <Filter>Header Files\Texture Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneD3D11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Meshd3d11.h">
+      <Filter>Header Files\Obj parsed Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SubMeshd3d11.h">
+      <Filter>Header Files\Obj parsed Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="parsedData.h">
+      <Filter>Header Files\Obj parsed Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraD3D11.h">
+      <Filter>Header Files\Utility Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image_write.h">
+      <Filter>Header Files\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredRendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StructuredBufferD3D11.h">
+      <Filter>Header Files\Buffer Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLightCollectionD3D11.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLightCollectionD3D11.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="CubicMappingD3D11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemD3D11.h">
+      <Filter>Header Files\Buffer Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="octree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frustumRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
