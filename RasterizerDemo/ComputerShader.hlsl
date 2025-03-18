@@ -108,7 +108,7 @@ void main( uint3 DTid : SV_DispatchThreadID )
     
     uint directionalLightCount = 1;
      // Loop through all Directional Ligts
-    for (uint i = 0; i < directionalLightCount; i++)
+    for (i = 0; i < directionalLightCount; i++)
     {
         SpotLight light = DirectionalLights[i];
         float3 lightDir = normalize(-light.direction); // Directional light has a direction but no position

@@ -774,8 +774,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		fireParticleCameraData.world = camera.GetViewProjectionMatrix();
 		fireParticleCameraData.position = camera.GetPosition();
 		fireParticlesCameraBuffer.UpdateBuffer(graphics.GetContext(), &fireParticleCameraData, sizeof(FireParticleCameraData));
-
-		
 		
 		renderer.SetRenderTarget();
 		fireSystem.bindSystem(graphics.GetContext());

@@ -27,6 +27,7 @@ PSOutput main(PixelShaderInput input)
 	// Texture Color
 	PSOutput output;
 	
+    
     if (renderType == 0)
     {
         float4 mat = testTexture.Sample(testSampler, input.uv);
@@ -35,9 +36,12 @@ PSOutput main(PixelShaderInput input)
     }
     else
     {
-        output.textureColor = float4(input.colour, 1.0f);
+        output.textureColor = float4(input.colour, 1);
 
     }
+    
+    
+   
         
 	output.normal = float4(input.normal, 0);
 	output.position = float4(input.positionWorld, 1);

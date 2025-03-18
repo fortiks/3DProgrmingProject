@@ -124,7 +124,7 @@ void CubicMappingD3D11::Initialize(ID3D11Device* device, ID3D11DeviceContext* co
 	// around X
 	float upRotations[6] = { 0.0f, 0.0, (DirectX::XM_PIDIV2), -(DirectX::XM_PIDIV2), 0.0f,0.0f }; // Rotations around local up
 	// around Y
-	float rightRotations[6] = { (DirectX::XM_PIDIV2), -(DirectX::XM_PIDIV2),0.0f, 0.0f, 0.0f, DirectX::XM_PI}; // Rotations around local right vector
+	float rightRotations[6] = { (DirectX::XM_PIDIV2), -(DirectX::XM_PIDIV2),0.0f, 0.0f, 0.0f, -DirectX::XM_PI}; // Rotations around local right vector
 
 	for (int i = 0; i < 6; ++i)
 	{
