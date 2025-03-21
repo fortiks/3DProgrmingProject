@@ -80,8 +80,9 @@ void SceneObjectD3D11::Render(ID3D11DeviceContext* context, bool cubeRendering) 
 	// Bind constant buffer
 	ID3D11Buffer* cb = constantBuffer->GetBuffer();
 	context->VSSetConstantBuffers(1, 1, &cb);
-
 	
+	ID3D11Buffer* Cb = RenderModeConstantBuffer.GetBuffer();
+	context->PSSetConstantBuffers(1, 1, &Cb);
 
 	if (cubeRendering == true)
 	{
@@ -93,9 +94,8 @@ void SceneObjectD3D11::Render(ID3D11DeviceContext* context, bool cubeRendering) 
 		}
 	}
 	else {
-
-		ID3D11Buffer* Cb = RenderModeConstantBuffer.GetBuffer();
-		context->PSSetConstantBuffers(0, 1, &Cb);
+		
+		RenderMode mode = renderMode;
 		size_t nrOfSubMeshes = mesh->GetNrOfSubMeshes();
 		ID3D11ShaderResourceView* diffuseTexture = nullptr;
 		for (int i = 0; i < nrOfSubMeshes; i++)

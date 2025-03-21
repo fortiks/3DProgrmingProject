@@ -34,7 +34,7 @@ enum class RenderMode
 };
 
 struct RenderType {
-    float renderType;
+    int renderType;
     DirectX::XMFLOAT3 padding;
 };
 

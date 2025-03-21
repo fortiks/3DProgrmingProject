@@ -4,6 +4,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <random>
 
 
 
@@ -211,7 +212,13 @@ void ParsedVertex(std::string faceElement, ParseData& data)
     const std::array<float, 2> UVArray = XMFloat2ToArray(data.uvs[texCoordIndex]);
     const std::array<float, 3> normalArray = XMFloat3ToArray(data.normals[normalIndex]);
     
-    SimpleVertex vertex(positionArray, UVArray, normalArray);
+    // random color 
+    float r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+    float g = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+    float b = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+    const std::array<float, 3> clr = { r, g, b };
+
+    SimpleVertex vertex(positionArray, UVArray, normalArray, clr);
     data.vertexData.push_back(vertex);
     data.indexData.push_back(static_cast<unsigned int>(data.vertexData.size() - 1));
     

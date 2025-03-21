@@ -305,6 +305,97 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	objectBarrelStove->world = DirectX::XMMatrixScaling(3, 3, 3) *
 		DirectX::XMMatrixTranslation(15.0f, 0.0f, -1.0f);
 
+	// 7
+	std::unique_ptr<SceneObjectD3D11> objectSphere3 = std::make_unique<SceneObjectD3D11>();
+	objectSphere3->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere3->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(10.0f, 10.0f, 0.0f);
+
+	// 8
+	std::unique_ptr<SceneObjectD3D11> objectSphere4 = std::make_unique<SceneObjectD3D11>();
+	objectSphere4->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere4->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(-10.0f, 10.0f, 0.0f);
+
+	//9
+	std::unique_ptr<SceneObjectD3D11> objectSphere5 = std::make_unique<SceneObjectD3D11>();
+	objectSphere5->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere5->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(0.0f, 10.0f, -3.0f);
+
+	//10
+	std::unique_ptr<SceneObjectD3D11> objectSphere6 = std::make_unique<SceneObjectD3D11>();
+	objectSphere6->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere6->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(10.0f, 12.0f, -5.0f);
+
+	//11
+	std::unique_ptr<SceneObjectD3D11> objectSphere7 = std::make_unique<SceneObjectD3D11>();
+	objectSphere7->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere7->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(5.0f, 10.0f, 0.0f);
+
+	//12
+	std::unique_ptr<SceneObjectD3D11> objectSphere8 = std::make_unique<SceneObjectD3D11>();
+	objectSphere8->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere8->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(12, 10.0f, -10.0f);
+
+	//13
+	std::unique_ptr<SceneObjectD3D11> objectSphere9 = std::make_unique<SceneObjectD3D11>();
+	objectSphere9->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere9->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(4.0f, 15.0f, -7.0f);
+
+	//14
+	std::unique_ptr<SceneObjectD3D11> objectSphere10 = std::make_unique<SceneObjectD3D11>();
+	objectSphere10->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere10->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(-2.0f, 12.0f, -1.0f);
+
+	//15
+	std::unique_ptr<SceneObjectD3D11> objectSphere11 = std::make_unique<SceneObjectD3D11>();
+	objectSphere11->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere11->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(8.0f, 10.0f, -12.0f);
+
+
+	//16
+	std::unique_ptr<SceneObjectD3D11> objectSphere12 = std::make_unique<SceneObjectD3D11>();
+	objectSphere12->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere12->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(8.0f, 3.0f, -15.0f);
+
+	//17
+	std::unique_ptr<SceneObjectD3D11> objectSphere13 = std::make_unique<SceneObjectD3D11>();
+	objectSphere13->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere13->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(6.0f, 3.0f, -15.0f);
+
+	//18
+	std::unique_ptr<SceneObjectD3D11> objectSphere14 = std::make_unique<SceneObjectD3D11>();
+	objectSphere14->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere14->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(0.0f, 3.0f, -15.0f);
+
+	//19
+	std::unique_ptr<SceneObjectD3D11> objectSphere15 = std::make_unique<SceneObjectD3D11>();
+	objectSphere15->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere15->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(0.0f, 12.0f, -15.0f);
+
+	//20
+	std::unique_ptr<SceneObjectD3D11> objectSphere16 = std::make_unique<SceneObjectD3D11>();
+	objectSphere16->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere16->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(20.0f, 10.0f, -12.0f);
+
+	//21
+	std::unique_ptr<SceneObjectD3D11> objectSphere17 = std::make_unique<SceneObjectD3D11>();
+	objectSphere17->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere17->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
+		DirectX::XMMatrixTranslation(-35.0f, -10.0f, -12.0f);
+
 
 	// === Moving objects ===
 	// Object 0 SUN
@@ -329,6 +420,22 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	firstScene.AddObject(std::move(objectSphere));
 	firstScene.AddObject(std::move(objectStreetLamp));
 	firstScene.AddObject(std::move(objectBarrelStove));
+	firstScene.AddObject(std::move(objectSphere3));
+	firstScene.AddObject(std::move(objectSphere4));
+	firstScene.AddObject(std::move(objectSphere5));
+	firstScene.AddObject(std::move(objectSphere6));
+	firstScene.AddObject(std::move(objectSphere7));
+	firstScene.AddObject(std::move(objectSphere8));
+	firstScene.AddObject(std::move(objectSphere9));
+	firstScene.AddObject(std::move(objectSphere10));
+	firstScene.AddObject(std::move(objectSphere11));
+	firstScene.AddObject(std::move(objectSphere12));
+	firstScene.AddObject(std::move(objectSphere13));
+	firstScene.AddObject(std::move(objectSphere14));
+	firstScene.AddObject(std::move(objectSphere15));
+	firstScene.AddObject(std::move(objectSphere16));
+	firstScene.AddObject(std::move(objectSphere17));
+	
 
 
 	firstScene.AddMovingObject(std::move(objectSun));
@@ -342,6 +449,22 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	firstScene.getObject(4)->updateConstBuffer(graphics.GetContext());
 	firstScene.getObject(5)->updateConstBuffer(graphics.GetContext());
 	firstScene.getObject(6)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(7)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(8)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(9)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(10)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(11)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(12)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(13)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(14)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(15)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(16)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(17)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(18)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(19)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(20)->updateConstBuffer(graphics.GetContext());
+	firstScene.getObject(21)->updateConstBuffer(graphics.GetContext());
+	
 
 	firstScene.getObject(0)->updateBoundingBox(firstScene.getObject(0)->world);
 	firstScene.getObject(1)->updateBoundingBox(firstScene.getObject(1)->world);
@@ -350,6 +473,21 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	firstScene.getObject(4)->updateBoundingBox(firstScene.getObject(4)->world);
 	firstScene.getObject(5)->updateBoundingBox(firstScene.getObject(5)->world);
 	firstScene.getObject(6)->updateBoundingBox(firstScene.getObject(6)->world);
+	firstScene.getObject(7)->updateBoundingBox(firstScene.getObject(7)->world);
+	firstScene.getObject(8)->updateBoundingBox(firstScene.getObject(8)->world);
+	firstScene.getObject(9)->updateBoundingBox(firstScene.getObject(9)->world);
+	firstScene.getObject(10)->updateBoundingBox(firstScene.getObject(10)->world);
+	firstScene.getObject(11)->updateBoundingBox(firstScene.getObject(11)->world);
+	firstScene.getObject(12)->updateBoundingBox(firstScene.getObject(12)->world);
+	firstScene.getObject(13)->updateBoundingBox(firstScene.getObject(13)->world);
+	firstScene.getObject(14)->updateBoundingBox(firstScene.getObject(14)->world);
+	firstScene.getObject(15)->updateBoundingBox(firstScene.getObject(15)->world);
+	firstScene.getObject(16)->updateBoundingBox(firstScene.getObject(16)->world);
+	firstScene.getObject(17)->updateBoundingBox(firstScene.getObject(17)->world);
+	firstScene.getObject(18)->updateBoundingBox(firstScene.getObject(18)->world);
+	firstScene.getObject(19)->updateBoundingBox(firstScene.getObject(19)->world);
+	firstScene.getObject(20)->updateBoundingBox(firstScene.getObject(20)->world);
+	firstScene.getObject(21)->updateBoundingBox(firstScene.getObject(21)->world);
 	
 	//  === Culling of Objects ===
 	DirectX::BoundingFrustum cameraFrustum;  
@@ -549,10 +687,15 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	IMGUIControlBuffer.Initialize(graphics.GetDevice(), sizeof(IMGuivariables), 1, &IMGuivariables, true);
 	int hej = 6000;
 
+	// FPS 
+	float frameCount = 0;
+	float elapsedTime = 0;
+	float fps = 0;
 	while (!(GetKeyState(VK_ESCAPE) & 0x8000) && msg.message != WM_QUIT)
 	{
+		endTime = std::chrono::high_resolution_clock::now();
 		dt = endTime - startTime;
-		startTime = std::chrono::high_resolution_clock::now();
+		startTime = endTime;
 
 		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
 		{
@@ -605,13 +748,23 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		firstScene.getObject(5)->updateBoundingBox(firstScene.getObject(4)->world);
 		firstScene.getObject(6)->updateBoundingBox(firstScene.getObject(6)->world);*/
 		
-
+		/*
 		firstScene.getObject(0)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(1)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(2)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(3)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(5)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(6)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(7)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(8)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(9)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(10)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(11)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(12)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(13)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(14)->updateConstBuffer(graphics.GetContext());
+		firstScene.getObject(15)->updateConstBuffer(graphics.GetContext());*/
+
 		
 
 		// Sun
@@ -794,13 +947,18 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		
 		
 		renderer.SetRenderTarget();
-		
+		frameCount++;
+		elapsedTime += dt.count();
+		if (elapsedTime >= 1.0f) {  // Update FPS every second
+			fps = frameCount;
+			frameCount = 0;
+			elapsedTime = 0.0f;
+		}
+		ImGui::Text("FPS: %.1f", fps);
 		//renderer.RenderWithWires();
 		EndImGuiFrame(); 
 		renderer.SetSwapChain();
 
-		std::this_thread::sleep_for(std::chrono::milliseconds(8));
-		endTime = std::chrono::high_resolution_clock::now();
 	}
 
 	vertexConstantBufferInterface->Release();

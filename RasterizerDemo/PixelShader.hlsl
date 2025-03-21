@@ -17,9 +17,9 @@ struct PSOutput {
 	float4 normal    : SV_Target2;	
 };
 
-cbuffer renderMode : register(b0)
+cbuffer renderMode : register(b1)
 {
-    float renderType;
+    int renderType;
 };
 
 PSOutput main(PixelShaderInput input)
@@ -33,14 +33,19 @@ PSOutput main(PixelShaderInput input)
         float4 mat = testTexture.Sample(testSampler, input.uv);
         clip(mat.w - 0.1);
         output.textureColor = mat;
+        
     }
-    else
+    else if (renderType == 1)
     {
         output.textureColor = float4(input.colour, 1);
 
     }
+    else
+    {
+        output.textureColor = float4(0, 0, 0, 1); // Default black
+    }
     
-    
+  
    
         
 	output.normal = float4(input.normal, 0);
