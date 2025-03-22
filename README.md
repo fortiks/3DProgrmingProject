@@ -12,7 +12,7 @@
 
 - Frustum Culling using an Octree: A technique to optimize rendering performance by excluding objects that are outside the camera's view frustum, using an octree.
 
-- GPU-based Billboarded Particle System: A particle system where particles always face the camera, using GPU to handle calculations and rendering efficiently.
+- GPU-based Billboarded Particle System: A particle system where particles always face the camera, using GPU to handle calculations and rendering efficiently using an computeshader.
 
 - Level of Detail (LOD) using Tessellation: A technique for dynamically adjusting the complexity of objects based on their distance from the camera, using tessellation to add more detail as objects get closer.
 
