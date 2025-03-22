@@ -5,9 +5,10 @@
 **The following techniques are currently explored:**
 - Deferred Rendering: A technique for rendering complex scenes more efficiently by separating the rendering of geometry and lighting into different passes.
 
-- Shadow Mapping: A technique used to add realistic shadows to 3D scenes by simulating how light interacts with objects.
+- Shadow Mapping: A technique used to add realistic shadows to 3D scenes by simulating how light interacts with objects. It works by rendering the scene from the perspective of the light source to create a depth map, also known as a shadow map, which stores the distance from the light to the nearest surface.
 
-- OBJ Parser: An Basic implementation to read and load 3D models in the .obj file format
+- OBJ Parser: An Basic implementation to read and load 3D models in the .obj file format ONLY!!.
+
 - Dynamic Cubic Environment Mapping: A technique for simulating reflective surfaces by using a cube map that represents the environment around the object.
 
 - Frustum Culling using an Octree: A technique to optimize rendering performance by excluding objects that are outside the camera's view frustum, using an octree.
