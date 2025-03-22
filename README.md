@@ -17,5 +17,5 @@
 - Level of Detail (LOD) using Tessellation: A technique for dynamically adjusting the complexity of objects based on their distance from the camera, using tessellation to add more detail as objects get closer.
 
 
-![Alt Text](https://github.com/fortiks/3D-metaballs/blob/master/Metaballs.png)
+![Alt Text](https://github.com/fortiks/3DProgrmingProject/blob/master/Demo.png)
 
