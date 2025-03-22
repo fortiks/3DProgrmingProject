@@ -2,7 +2,7 @@
 
 ## This 3D Programming Project is a Rasterizer demo that focuses on exploring various 3D techniques to a certain degree.
 
-###The following techniques are currently explored: 
+The following techniques are currently explored: 
 - Deferred Rendering: A technique for rendering complex scenes more efficiently by separating the rendering of geometry and lighting into different passes.
 
 - Shadow Mapping: A technique used to add realistic shadows to 3D scenes by simulating how light interacts with objects.
