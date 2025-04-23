@@ -6,6 +6,7 @@ DeferredRenderer::DeferredRenderer(ID3D11Device* device, int width, int height) 
 	gBuffer[0].Initialize(device, width, height, DXGI_FORMAT_R32G32B32A32_FLOAT, true);
 	gBuffer[1].Initialize(device, width, height, DXGI_FORMAT_R32G32B32A32_FLOAT, true);
 	gBuffer[2].Initialize(device, width, height, DXGI_FORMAT_R32G32B32A32_FLOAT, true);
+	gBuffer[3].Initialize(device, width, height, DXGI_FORMAT_R32G32B32A32_FLOAT, true);
 }
 
 DeferredRenderer::~DeferredRenderer()
@@ -18,17 +19,19 @@ DeferredRenderer::~DeferredRenderer()
 
 void DeferredRenderer::BeginGeometryPass(ID3D11DeviceContext* context, ID3D11DepthStencilView* DSV)
 {
-	const unsigned int NR_OF_GBUFFERS = 3;
+	const unsigned int NR_OF_GBUFFERS = 4;
 	float clearColour[4] = { 0.0, 0.0, 0.0, 0.0};
 
 	context->ClearRenderTargetView(gBuffer[0].GetRTV(), clearColour); // clear the rtv to get inomfation again
 	context->ClearRenderTargetView(gBuffer[1].GetRTV(), clearColour);
 	context->ClearRenderTargetView(gBuffer[2].GetRTV(), clearColour);
+	context->ClearRenderTargetView(gBuffer[3].GetRTV(), clearColour);
 
 	ID3D11RenderTargetView* rtvArr[NR_OF_GBUFFERS];
 	rtvArr[0] = gBuffer[0].GetRTV();
 	rtvArr[1] = gBuffer[1].GetRTV();
 	rtvArr[2] = gBuffer[2].GetRTV();
+	rtvArr[3] = gBuffer[3].GetRTV();
 
 	context->OMSetRenderTargets(NR_OF_GBUFFERS, rtvArr, DSV);
 }
@@ -36,14 +39,14 @@ void DeferredRenderer::BeginGeometryPass(ID3D11DeviceContext* context, ID3D11Dep
 void DeferredRenderer::EndGeometryPass(ID3D11DeviceContext* context)
 {
 	// Unbind G-Buffer textures from render targets
-	ID3D11RenderTargetView* nullRTV[3] = { nullptr, nullptr, nullptr };
-	context->OMSetRenderTargets(3, nullRTV, nullptr);
+	ID3D11RenderTargetView* nullRTV[4] = { nullptr, nullptr, nullptr, nullptr};
+	context->OMSetRenderTargets(4, nullRTV, nullptr);
 }
 
 void DeferredRenderer::RenderLightingPass(ID3D11DeviceContext* context, ID3D11ComputeShader* computerShader, 
 	ID3D11UnorderedAccessView* bufferUAV)
 {
-	const unsigned int NR_OF_GBUFFERS = 3;
+	const unsigned int NR_OF_GBUFFERS = 4;
 
 	// clear backBuffer between calls
 	float clearColor[4] = { 0.169f, 0.18f, 0.98f, 1.0f }; // RGBA in float (normalized 0-1)
@@ -68,7 +71,8 @@ void DeferredRenderer::RenderLightingPass(ID3D11DeviceContext* context, ID3D11Co
 	ID3D11ShaderResourceView* gBufferSRVs[NR_OF_GBUFFERS] = {
 		gBuffer[0].GetSRV(), // texture
 		gBuffer[1].GetSRV(), // normal
-		gBuffer[2].GetSRV()  //pos
+		gBuffer[2].GetSRV(),  //pos
+		gBuffer[3].GetSRV()  //texture Ambient and specular
 	};
 
 	context->CSSetShaderResources(0, NR_OF_GBUFFERS, gBufferSRVs);
@@ -76,8 +80,8 @@ void DeferredRenderer::RenderLightingPass(ID3D11DeviceContext* context, ID3D11Co
 	context->Dispatch(width / 8, height / 8, 1);
 	//context->Flush();  // Ensure all commands are completed
 	// Unbind resources
-	ID3D11ShaderResourceView* nullSRVs[3] = { nullptr, nullptr, nullptr };
-	context->CSSetShaderResources(0, 3, nullSRVs);
+	ID3D11ShaderResourceView* nullSRVs[4] = { nullptr, nullptr, nullptr, nullptr};
+	context->CSSetShaderResources(0, 4, nullSRVs);
 	ID3D11UnorderedAccessView* nullUAV = nullptr;
 	context->CSSetUnorderedAccessViews(0, 1, &nullUAV, nullptr);
 }

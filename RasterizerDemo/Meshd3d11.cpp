@@ -34,7 +34,9 @@ void MeshD3D11::Initialize(ID3D11Device* device, const MeshData& meshInfo)
 	{
 		subMesh.startIndexValue;
 		SubMeshD3D11 pushMesh;
-		pushMesh.Initialize(subMesh.startIndexValue, subMesh.nrOfIndicesInSubMesh, subMesh.diffuseTextureSRV);
+		pushMesh.Initialize(subMesh.startIndexValue, subMesh.nrOfIndicesInSubMesh, subMesh.diffuseTextureSRV, 
+			subMesh.ambientTextureSRV, subMesh.specularTextureSRV, subMesh.Ns);
+
 		subMeshes.push_back(pushMesh);
 	}
 	
@@ -66,9 +68,17 @@ std::vector<DirectX::XMFLOAT3> MeshD3D11::GetVertexPosition() const
 	return vertexPositions;
 }
 
-
-
 ID3D11ShaderResourceView* MeshD3D11::GetDiffuseSRV(size_t subMeshIndex) const
 {
 	return subMeshes[subMeshIndex].GetDiffuseSRV();
+}
+
+ID3D11ShaderResourceView* MeshD3D11::GetAmbientSRV(size_t subMeshIndex) const
+{
+	return subMeshes[subMeshIndex].GetAmbientSRV();
+}
+
+ID3D11ShaderResourceView* MeshD3D11::GetSpecularSRV(size_t subMeshIndex) const
+{
+	return subMeshes[subMeshIndex].GetSpecularSRV();
 }

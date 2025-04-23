@@ -97,15 +97,24 @@ void SceneObjectD3D11::Render(ID3D11DeviceContext* context, bool cubeRendering) 
 		
 		RenderMode mode = renderMode;
 		size_t nrOfSubMeshes = mesh->GetNrOfSubMeshes();
+		ID3D11ShaderResourceView* ambientTexture = nullptr;
 		ID3D11ShaderResourceView* diffuseTexture = nullptr;
+		ID3D11ShaderResourceView* specularTexture = nullptr;
 		for (int i = 0; i < nrOfSubMeshes; i++)
 		{
+			ambientTexture = mesh->GetAmbientSRV(i);
 			diffuseTexture = mesh->GetDiffuseSRV(i);
-			context->PSSetShaderResources(0, 1, &diffuseTexture);
+			specularTexture = mesh->GetSpecularSRV(i);
+			context->PSSetShaderResources(0, 1, &ambientTexture);
+			context->PSSetShaderResources(1, 1, &diffuseTexture);
+			context->PSSetShaderResources(2, 1, &specularTexture);
+			 
 			mesh->PerformSubMeshDrawCall(context, i);
 
 		}
 		diffuseTexture = nullptr;
+		ambientTexture = nullptr;
+		specularTexture = nullptr;
 
 	}
 	

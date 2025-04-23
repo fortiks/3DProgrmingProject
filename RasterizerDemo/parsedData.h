@@ -30,7 +30,6 @@ struct ParseData {
 
 	std::unordered_map<std::string, ParsedMaterial> parsedMaterials;
 	
-
 	std::string currentSubMeshMaterial;
 	size_t currentSubMeshStartIndex = 0;
 	std::vector<SubMeshInfo> finishedSubMeshes;

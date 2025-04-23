@@ -33,8 +33,6 @@ private:
 
 	void SetViewport(D3D11_VIEWPORT& viewport, UINT width, UINT height);
 
-	
-	
 };
 
 // INPUT asemblerr  

@@ -28,25 +28,36 @@ void StartImGuiFrame()
 
 
 void ImGuiModifying(VertexConstantBuffer& toModify, ID3D11DeviceContext* context, ID3D11Buffer* buffer, 
-		CameraType& currentCamera, IMGuiVariables& IMGuivariables)
+		CameraType& currentCamera, IMGuiVariables& IMGuivariables, float& DisplacementStrength)
 {
 	bool begun = ImGui::Begin("Modifiers");
 	if (begun)
 	{
 		ImGui::ColorEdit3("Colour modifier", toModify.colourModifier);
+
+		ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x * 0.25f); // half the width
 		ImGui::SliderFloat("X pos modifier", &toModify.positionModifer[0], -0.5f, 0.5f);
+		ImGui::SameLine();
+		ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x * 0.45f);
 		ImGui::InputFloat("Y pos modifier", &toModify.positionModifer[1], 0.1f);
 
-
 		if (ImGui::Button("Main Camera")) currentCamera = MAIN_CAMERA;
+
 		if (ImGui::Button("Spotlight Camera1")) currentCamera = SpotLight_CAMERA1;
+		ImGui::SameLine();
 		if (ImGui::Button("Spotlight Camera2")) currentCamera = SpotLight_CAMERA2;
 
 		if (ImGui::Button("cubeCamera0")) currentCamera = cubeCamera0;
+		ImGui::SameLine(); 
 		if (ImGui::Button("cubeCamera1")) currentCamera = cubeCamera1;
+
+
 		if (ImGui::Button("cubeCamera2")) currentCamera = cubeCamera2;
+		ImGui::SameLine(); 
 		if (ImGui::Button("cubeCamera3")) currentCamera = cubeCamera3;
+
 		if (ImGui::Button("cubeCamera4")) currentCamera = cubeCamera4;
+		ImGui::SameLine(); 
 		if (ImGui::Button("cubeCamera5")) currentCamera = cubeCamera5;
 
 
@@ -55,6 +66,8 @@ void ImGuiModifying(VertexConstantBuffer& toModify, ID3D11DeviceContext* context
 		{
 			IMGuivariables.isShadow = shadowEnabled ? 1 : 0;
 		}
+
+		ImGui::SliderFloat("DisplacementStrength", &DisplacementStrength, 0.0f, 0.5f);
 		
 
 	}

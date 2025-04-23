@@ -3,6 +3,11 @@ cbuffer CameraBuffer : register(b0)
 	float4x4  viewProjectionMatrix;
 };
 
+cbuffer DisplacementStrength : register(b1)
+{
+    float displacementStrength;
+};
+
 Texture2D displacementMap : register(t0); 
 SamplerState samplerState : register(s0); 
 
@@ -61,9 +66,9 @@ DomainShaderOutput main(
 
 	// Displacement map test: Move vertices along texture
 
-	float displacement = displacementMap.SampleLevel(samplerState, output.uv, 0).r; // Use red channel
+	float displacement = displacementMap.SampleLevel(samplerState, output.uv, 0).b; // Use blue channel
 
-	//tessellatedPosition += output.normal * displacement;
+    tessellatedPosition += output.normal * (displacement * displacementStrength);
 
 	output.positionWorld = tessellatedPosition;
 

@@ -17,5 +17,5 @@ public:
 private:
     int width, height;
     ID3D11UnorderedAccessView* backBufferUAV;    
-	RenderTargetD3D11 gBuffer[3];
+	RenderTargetD3D11 gBuffer[4];
 };

@@ -3,6 +3,7 @@ RWTexture2DArray<float4> cubeMapUAV : register(u0);
 Texture2D<float4> positionGBuffer : register(t0);
 Texture2D<float4> colorGBuffer : register(t1);
 Texture2D<float4> normalGBuffer : register(t2);
+Texture2D<float4> ambientSpecular : register(t3);
 
 
 
@@ -15,7 +16,7 @@ struct SpotLight
     float3 position;
 };
 
-StructuredBuffer<SpotLight> SpotLights : register(t3);
+StructuredBuffer<SpotLight> SpotLights : register(t8);
 Texture2DArray<float> shadowMaps : register(t4);
 sampler shadowMapSampler : register(s0);
 

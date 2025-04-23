@@ -260,12 +260,12 @@ void ParseMTL(const std::string director, const std::string& dataSection, ParseD
             if (material != nullptr && material->mapKd == "")
             {
 
-                material->mapKd = "../Textures/2dPng/RockTexture.png";
+                material->mapKd = "../Textures/DefualtTexture/BrickWall11_4K_BaseColor.png";
             }
             if (material != nullptr && material->mapKa == "")
             {
 
-                material->mapKa = "../Textures/DefualtTexture/whiteKA.png";
+                material->mapKa = "../Textures/DefualtTexture/BrickWall11_4K_BaseColor.png";
             }
             if (material != nullptr && material->shininess == 0.0 )
             {
@@ -273,12 +273,14 @@ void ParseMTL(const std::string director, const std::string& dataSection, ParseD
             }
             if (material != nullptr && material->mapKs == "")
             {
-                material->mapKs = "../Textures/DefualtTexture/greenKs.png";
+                material->mapKs = "../Textures/DefualtTexture/BrickWall11_specular.png";
             }
             // load texture 
             if (material != nullptr)
             {
+                loadTexture(material->mapKa, loadedTextures, device);
                 loadTexture(material->mapKd, loadedTextures, device);
+                loadTexture(material->mapKs, loadedTextures, device);
             }
             
 
@@ -322,31 +324,30 @@ void ParseMTL(const std::string director, const std::string& dataSection, ParseD
     if (material != nullptr && material->mapKd == "")
     {
 
-        material->mapKd = "../Textures/2dPng/RockTexture.png";
+        material->mapKd = "../Textures/DefualtTexture/BrickWall11_4K_BaseColor.png";
     }
     if (material != nullptr && material->mapKa == "")
     {
 
-        material->mapKa = "../Textures/DefualtTexture/whiteKA.png";
+        material->mapKa = "../Textures/DefualtTexture/BrickWall11_4K_BaseColor.png";
     }
     if (material != nullptr && material->shininess == 0.0 )
     {
-        material->shininess = 250.000000;
+        material->shininess = 50.0f;
     }
     if (material != nullptr && material->mapKs == "")
     {
-        material->mapKs = "../Textures/DefualtTexture/greenKs.png";
+        material->mapKs = "../Textures/DefualtTexture/BrickWall11_specular.png";
     }
 
-    data.currentSubMeshMaterial = "";
+    
     if (material != nullptr)
     {
+        loadTexture(material->mapKa, loadedTextures, device);
         loadTexture(material->mapKd, loadedTextures, device);
+        loadTexture(material->mapKs, loadedTextures, device);
     }
-    
-    /*loadTexture(material->mapKd, loadedTextures, device);
-    loadTexture(material->mapKa, loadedTextures, device);
-    loadTexture(material->mapKs, loadedTextures, device);*/
+    data.currentSubMeshMaterial = "";
 }
 
 
@@ -358,6 +359,9 @@ void PushbackCurrentSubmesh(ParseData& data, std::unordered_map<std::string, Sha
     toAdd.nrOfIndicesInSubMesh = data.indexData.size() - toAdd.startIndexValue;
     
     toAdd.diffuseTextureSRV = loadedTextures[data.parsedMaterials[data.currentSubMeshMaterial].mapKd].GetSRV();
+    toAdd.ambientTextureSRV = loadedTextures[data.parsedMaterials[data.currentSubMeshMaterial].mapKa].GetSRV();
+    toAdd.specularTextureSRV = loadedTextures[data.parsedMaterials[data.currentSubMeshMaterial].mapKs].GetSRV();
+    toAdd.Ns = data.parsedMaterials[data.currentSubMeshMaterial].shininess;
     data.finishedSubMeshes.push_back(toAdd);
 }
 
@@ -407,7 +411,6 @@ void ParseLine(const std::string director, const std::string& line, ParseData& d
     }
 
 }
-
 
 void ParseOBJ(const std::string director, const std::string& identifier, const std::string& contents,
         std::unordered_map<std::string, ShaderResourceTextureD3D11>& loadedTextures, 

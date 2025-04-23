@@ -38,7 +38,7 @@ public:
 	CameraD3D11(CameraD3D11&& other) = default;
 	CameraD3D11& operator=(CameraD3D11&& other) = default;
 
-	void Initialize(ID3D11Device* device, const ProjectionInfo& projectionInfo,  // might be getting the viewporjection sideways look into it later
+	void Initialize(ID3D11Device* device, const ProjectionInfo& projectionInfo, 
 		const DirectX::XMFLOAT3& initialPosition = DirectX::XMFLOAT3(0.0f, 0.0f, 0.0f));
 
 	void MoveForward(float amount);
@@ -61,8 +61,9 @@ public:
 	void UpdateInternalConstantBuffer(ID3D11DeviceContext* context);
 	void UpdateInternalOrthographicConstantBuffer(ID3D11DeviceContext* context, DirectX::XMFLOAT3 sceneCenter, 
 		float shadowBoxSize, DirectX::XMFLOAT3 lightDir);
-	ID3D11Buffer* GetConstantBuffer() const;
 
+
+	ID3D11Buffer* GetConstantBuffer() const;
 	void SetForward(DirectX::XMFLOAT3 forward);
 
 	DirectX::XMFLOAT4X4 GetViewProjectionMatrix() const;

@@ -10,6 +10,7 @@ Ni 1.500000
 d 1.000000
 illum 2
 map_Kd Black.png
+map_Ks brownSpecular.png
 
 newmtl Pink
 Ns 250.000000
@@ -19,7 +20,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Pink.png
+map_Ks brownSpecular.png
 
 newmtl Purple
 Ns 250.000000
@@ -29,7 +32,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Purple.png
+map_Ks brownSpecular.png
 
 newmtl Red
 Ns 250.000000
@@ -39,7 +44,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Red.png
+map_Ks brownSpecular.png
 
 newmtl blue
 Ns 250.000000
@@ -49,7 +56,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Blue.png
+map_Ks brownSpecular.png
 
 newmtl green
 Ns 250.000000
@@ -59,7 +68,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Green.png
+map_Ks brownSpecular.png
 
 newmtl yellow
 Ns 250.000000
@@ -69,4 +80,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka AmbientColor.png
 map_Kd Yellow.png
+map_Ks brownSpecular.png

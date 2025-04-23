@@ -237,10 +237,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	const MeshD3D11* meshRubiksCube = GetMesh("../Textures/RubiksCube/", "RubiksCube.obj", 
 		loadedTextures, loadedMeshes, graphics.GetDevice());
 	
-	const MeshD3D11* meshCube = GetMesh("../Textures/Cube/", "Cube.obj",
+	const MeshD3D11* meshCube = GetMesh("../Textures/Cube/", "Cube.obj", 
 		loadedTextures, loadedMeshes, graphics.GetDevice());
 
-	const MeshD3D11* meshGround = GetMesh("../Textures/Road/", "ground.obj",
+	const MeshD3D11* meshGround = GetMesh("../Textures/Road/", "ground.obj", 
 		loadedTextures, loadedMeshes, graphics.GetDevice());
 
 	const MeshD3D11* meshSun = GetMesh("../Textures/Sun/", "Sun.obj",
@@ -249,7 +249,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	const MeshD3D11* meshLamp = GetMesh("../Textures/street lamp/", "StreetLamp.obj",
 		loadedTextures, loadedMeshes, graphics.GetDevice());
 
-	const MeshD3D11* meshBarrelStove = GetMesh("../Textures/barrel_stove/", "barrel_stove_4k.obj",
+	const MeshD3D11* meshBarrelStove = GetMesh("../Textures/barrel_stove/", "barrel_stove_4k.obj",  
+		loadedTextures, loadedMeshes, graphics.GetDevice());
+
+	const MeshD3D11* meshBrickSphere = GetMesh("../Textures/Sun/", "BrickSphere.obj",  
 		loadedTextures, loadedMeshes, graphics.GetDevice());
 
 	// === Scenes ===
@@ -307,9 +310,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	// 7
 	std::unique_ptr<SceneObjectD3D11> objectSphere3 = std::make_unique<SceneObjectD3D11>();
-	objectSphere3->Initialize(meshSun, sampler, graphics.GetDevice(), RenderMode::Color);
+	objectSphere3->Initialize(meshBrickSphere, sampler, graphics.GetDevice(), RenderMode::Texture);
 	objectSphere3->world = DirectX::XMMatrixScaling(0.1f, 0.1f, 0.1f) *
-		DirectX::XMMatrixTranslation(10.0f, 10.0f, 0.0f);
+		DirectX::XMMatrixTranslation(5.0f, 2.0f, 0.0f);
 
 	// 8
 	std::unique_ptr<SceneObjectD3D11> objectSphere4 = std::make_unique<SceneObjectD3D11>();
@@ -614,8 +617,13 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	ConstantBufferD3D11 tessellationBuffer(graphics.GetDevice(), sizeof(TessellationBufferData), &tessellationBufferData);
 	
 	// displacement
+	DisplacementStrength displacementStrength;
+	displacementStrength.strength = 0.05;
+	ConstantBufferD3D11 displacementBuffer(graphics.GetDevice(), sizeof(displacementStrength), &displacementStrength);
+
+
 	ShaderResourceTextureD3D11 DisplacementMap;
-	DisplacementMap.Initialize(graphics.GetDevice(), "../Textures/Sun/sun.png"); // brick_wall_Displacement.png
+	DisplacementMap.Initialize(graphics.GetDevice(), "../Textures/T_Brick_RGBA.PNG");  //brick_wall_Displacement_RGBA.png 
 
 	SamplerD3D11 DisplacementMapSampler(graphics.GetDevice(), D3D11_TEXTURE_ADDRESS_BORDER);
 
@@ -630,7 +638,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	cameraPosBufferdata.cameraPosition = camera.GetPosition();
 	cameraPosBuffer.Initialize(graphics.GetDevice(), sizeof(cameraPosBufferData), &cameraPosBufferdata);
 
-	// object for cubic mapping
+	// object for cubic mappingsadwfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 	SceneObjectD3D11 objectSphereCubic;
 	objectSphereCubic.Initialize(meshSun, sampler, graphics.GetDevice());
 	objectSphereCubic.world = DirectX::XMMatrixScaling(0.3f, 0.3f, 0.3f) *
@@ -709,7 +717,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		if (inputManager.IsKeyPressed('F'))
 		{
 			ImGuiModifying(vertexConstantBufferData, graphics.GetContext(), vertexConstantBufferInterface, 
-					currentCamera, IMGuivariables);
+					currentCamera, IMGuivariables, displacementStrength.strength);
 			IMGUIControlBuffer.UpdateBuffer(graphics.GetContext(), &IMGuivariables);
 			inputManager.ShowCursorInClient();
 		}
@@ -765,8 +773,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		firstScene.getObject(14)->updateConstBuffer(graphics.GetContext());
 		firstScene.getObject(15)->updateConstBuffer(graphics.GetContext());*/
 
-		
-
 		// Sun
 		firstScene.getMovingObjects(0)->updateConstBuffer(graphics.GetContext());
 		// movement 
@@ -791,7 +797,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 		if (hej > 700)
 		{
-			frustumRenderer.UpdateVertexBuffer(graphics.GetContext(), corners);
+			frustumRenderer.UpdateVertexBuffer(graphics.GetContext(), corners); // unneccary but make it clear how the frustum work good for testing
 			hej = 0;
 		}
 		hej++;
@@ -855,7 +861,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			cameraMainConstantBuffer = camera.GetConstantBuffer();
 			break;
 		case SpotLight_CAMERA1:
-			cameraMainConstantBuffer = directionalLights.GetLightCameraConstantBuffer(0);
+			cameraMainConstantBuffer = spotLights.GetLightCameraConstantBuffer(0);
 			break;
 		case SpotLight_CAMERA2:
 			cameraMainConstantBuffer = spotLights.GetLightCameraConstantBuffer(1);
@@ -891,9 +897,13 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		ID3D11Buffer* tessellationConstantBuffer = tessellationBuffer.GetBuffer();
 		ID3D11ShaderResourceView* DisplacementMapSRV = DisplacementMap.GetSRV();
 		ID3D11SamplerState* DisplacementMapSamplerState = DisplacementMapSampler.GetSamplerState();
+		displacementBuffer.UpdateBuffer(graphics.GetContext(), &displacementStrength, sizeof(displacementStrength));
+		ID3D11Buffer* displacementbuffer = displacementBuffer.GetBuffer();
+			
 		graphics.GetContext()->HSSetConstantBuffers(0, 1, &tessellationConstantBuffer);
 		graphics.GetContext()->DSSetShaderResources(0, 1, &DisplacementMapSRV);
 		graphics.GetContext()->DSSetSamplers(0, 1, &DisplacementMapSamplerState);
+		graphics.GetContext()->DSSetConstantBuffers(1, 1, &displacementbuffer);
 		
 		firstScene.Render(graphics.GetContext(), vertexConstantBufferInterface, cameraWorldFrustum);
 		
@@ -958,7 +968,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		//renderer.RenderWithWires();
 		EndImGuiFrame(); 
 		renderer.SetSwapChain();
-
 	}
 
 	vertexConstantBufferInterface->Release();

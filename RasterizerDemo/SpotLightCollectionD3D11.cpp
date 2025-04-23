@@ -92,7 +92,7 @@ void SpotLightCollectionD3D11::BindSpotlights(ID3D11DeviceContext* context)
     ID3D11ShaderResourceView* srv = lightBuffer.GetSRV();  // Get the SRV from your structured buffer
     if (srv)
     {
-        context->CSSetShaderResources(3, 1, &srv); // Bind SRV to slot 3
+        context->CSSetShaderResources(8, 1, &srv); // Bind SRV to slot 8
     }
     ID3D11ShaderResourceView* srvShadowMap = shadowMaps.GetSRV();
     if (srvShadowMap)
@@ -109,7 +109,7 @@ void SpotLightCollectionD3D11::BindSpotlights(ID3D11DeviceContext* context)
 void SpotLightCollectionD3D11::UnBindSportLights(ID3D11DeviceContext* context)
 {
     ID3D11ShaderResourceView* srv = nullptr;
-    context->CSSetShaderResources(3, 1, &srv); // Bind SRV to slot 3
+    context->CSSetShaderResources(8, 1, &srv); // Bind SRV to slot 8
     ID3D11ShaderResourceView* srvShadowMap = nullptr;
     context->CSSetShaderResources(4, 1, &srvShadowMap); // Bind SRV to slot 4
 }

@@ -373,7 +373,7 @@
     <ClInclude Include="InputLayoutD3D11.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Meshd3d11.h" />
-    <ClInclude Include="octree.h" />
+    <ClInclude Include="OctreeD3D11.h" />
     <ClInclude Include="parsedData.h" />
     <ClInclude Include="ParticleSystemD3D11.h" />
     <ClInclude Include="RenderTargetD3D11.h" />

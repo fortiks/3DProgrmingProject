@@ -9,7 +9,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Ka brown.png
 map_Kd brown.png
+map_Ks brownSpecular.png
 map_Ns textures/barrel_stove_rough_4k.exr
 map_refl textures/barrel_stove_metal_4k.exr
 map_Bump -bm 1.000000 textures/barrel_stove_nor_gl_4k.exr

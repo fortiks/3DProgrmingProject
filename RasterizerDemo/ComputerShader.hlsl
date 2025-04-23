@@ -3,6 +3,7 @@ RWTexture2D<unorm float4> backBufferUAV : register(u0);
 Texture2D<float4> positionGBuffer : register(t0);
 Texture2D<float4> colorGBuffer : register(t1);
 Texture2D<float4> normalGBuffer : register(t2);
+Texture2D<float4> ambientSpecular : register(t3);
 
 
 // ==== Spot Light ===
@@ -15,7 +16,7 @@ struct SpotLight
 	float3 position;
 };
 
-StructuredBuffer<SpotLight> SpotLights : register(t3);
+StructuredBuffer<SpotLight> SpotLights : register(t8);
 Texture2DArray<float> shadowMaps : register(t4);
 sampler shadowMapSampler : register(s0);
 
@@ -42,6 +43,10 @@ void main( uint3 DTid : SV_DispatchThreadID )
 	float3 position = positionGBuffer[DTid.xy].xyz;
 	float3 colour = colorGBuffer[DTid.xy].xyz;
 	float3 normal = normalize(normalGBuffer[DTid.xy].xyz);
+    float3 SpecularColor = ambientSpecular[DTid.xy].xyz;
+    float ambientFactor = ambientSpecular[DTid.xy].a;
+    
+    
 	float4 backgroundColor = float4(0.169, 0.18, 0.98, 1); // Gray background
     float4 testColor = colorGBuffer[DTid.xy];
 
@@ -89,7 +94,7 @@ void main( uint3 DTid : SV_DispatchThreadID )
 
         // Blinn-Phong Specular Lighting
         float3 halfwayDir = normalize(lightDir + viewDir);
-        float spec = pow(max(dot(normal, halfwayDir), 0.0), 50.0); // Shininess = 50.0
+        float spec = SpecularColor * pow(max(dot(normal, halfwayDir), 0.0), 50.0); // Shininess = 50.0   // specularColor Ks
 
         float Intensity = 2.5;
         // Combine components
@@ -128,7 +133,7 @@ void main( uint3 DTid : SV_DispatchThreadID )
 
     // Blinn-Phong Specular Lighting
         float3 halfwayDir = normalize(lightDir + viewDir);
-        float spec = pow(max(dot(normal, halfwayDir), 0.0), 50.0);
+        float spec = SpecularColor * pow(max(dot(normal, halfwayDir), 0.0), 50.0);
 
         float Intensity = 1;
         float3 lightEffect = (diff + spec) * light.colour * Intensity;
@@ -141,7 +146,7 @@ void main( uint3 DTid : SV_DispatchThreadID )
         finalColor += lightEffect;
     }
     
-    float3 ambient = colour * 0.25f;
+    float3 ambient = ambientFactor * 0.25 * colour;
     // Apply base color and write output
     backBufferUAV[DTid.xy] = (testColor.a > 0.0) ? float4(ambient + colour * finalColor, 1.0) : backgroundColor;
    //float4(shadowMapDepth, shadowMapDepth, shadowMapDepth, 1.0f); //

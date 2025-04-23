@@ -90,9 +90,6 @@
     <ClCompile Include="..\imgui\imgui_widgets.cpp">
       <Filter>ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="ImGuiHelper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics.cpp">
       <Filter>Source Files\Graphics Classes</Filter>
     </ClCompile>
@@ -132,9 +129,6 @@
     <ClCompile Include="ShaderResourceTextureD3D11.cpp">
       <Filter>Source Files\Texture Classes</Filter>
     </ClCompile>
-    <ClCompile Include="SceneD3D11.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="parsedData.cpp">
       <Filter>Source Files\Obj parsed Classes</Filter>
     </ClCompile>
@@ -167,6 +161,12 @@
     </ClCompile>
     <ClCompile Include="frustumRender.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneD3D11.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiHelper.cpp">
+      <Filter>Source Files\Graphics Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -241,9 +241,6 @@
     <ClInclude Include="..\imgui\imstb_truetype.h">
       <Filter>ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="ImGuiHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics.h">
       <Filter>Header Files\Graphics Classes</Filter>
     </ClInclude>
@@ -283,9 +280,6 @@
     <ClInclude Include="ShaderResourceTextureD3D11.h">
       <Filter>Header Files\Texture Classes</Filter>
     </ClInclude>
-    <ClInclude Include="SceneD3D11.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Meshd3d11.h">
       <Filter>Header Files\Obj parsed Classes</Filter>
     </ClInclude>
@@ -322,11 +316,17 @@
     <ClInclude Include="ParticleSystemD3D11.h">
       <Filter>Header Files\Buffer Classes</Filter>
     </ClInclude>
-    <ClInclude Include="octree.h">
+    <ClInclude Include="OctreeD3D11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="frustumRender.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneD3D11.h">
+      <Filter>Header Files\Graphics Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiHelper.h">
+      <Filter>Header Files\Graphics Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

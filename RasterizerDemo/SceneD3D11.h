@@ -24,7 +24,7 @@
 
 
 // frustum 
-#include "octree.h"
+#include "OctreeD3D11.h"
 
 
 enum class RenderMode
@@ -87,5 +87,4 @@ public:
     
     void Render(ID3D11DeviceContext* context, ID3D11Buffer* IMGUIbuffer, 
         DirectX::BoundingFrustum& cameraWorldFrustum, bool CubeMapRendering = false);
-    
 };

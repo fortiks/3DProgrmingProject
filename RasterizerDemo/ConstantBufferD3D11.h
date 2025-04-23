@@ -73,6 +73,11 @@ struct TessellationBufferData
 
 };
 
+struct DisplacementStrength {
+	float strength;
+	DirectX::XMFLOAT3 padding;
+};
+
 class ConstantBufferD3D11
 {
 private:

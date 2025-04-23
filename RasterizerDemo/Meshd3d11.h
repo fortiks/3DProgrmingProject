@@ -25,9 +25,10 @@ struct SubMeshInfo
 {
 	size_t startIndexValue;
 	size_t nrOfIndicesInSubMesh;
-	//ID3D11ShaderResourceView* ambientTextureSRV;
+	ID3D11ShaderResourceView* ambientTextureSRV;
 	ID3D11ShaderResourceView* diffuseTextureSRV;
-	//ID3D11ShaderResourceView* specularTextureSRV;
+	ID3D11ShaderResourceView* specularTextureSRV;
+	float Ns;
 };
 
 struct MeshData

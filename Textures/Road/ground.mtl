@@ -9,7 +9,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka Grass01_AmbientColor.png
 map_Kd Grass01_2K_BaseColor.png
+map_Ks Grass_Specular.png
+
 
 newmtl Material.005
 Ns 250.000000
@@ -29,4 +32,6 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
+map_Ka BrickWall11_AmbientColor.png
 map_Kd BrickWall11_4K_BaseColor.png
+map_Ks BrickWall11_specular.png

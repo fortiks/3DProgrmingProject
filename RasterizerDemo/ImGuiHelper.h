@@ -27,6 +27,6 @@ void StartImGuiFrame();
 
 
 void ImGuiModifying(VertexConstantBuffer& toModify, ID3D11DeviceContext* context, ID3D11Buffer* buffer, 
-			CameraType& currentCamera, IMGuiVariables& IMGuivariables);
+			CameraType& currentCamera, IMGuiVariables& IMGuivariables, float& DisplacementStrength);
 
 void EndImGuiFrame();

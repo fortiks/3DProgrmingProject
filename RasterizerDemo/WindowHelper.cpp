@@ -30,7 +30,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 
 bool SetupWindow(HINSTANCE instance, UINT width, UINT height, int nCmdShow, HWND& window)
 {
-	const wchar_t CLASS_NAME[] = L"Test Window Class";
+	const wchar_t CLASS_NAME[] = L"Rasterizer Program Class";
 
 	WNDCLASS wc = { };
 
@@ -43,7 +43,7 @@ bool SetupWindow(HINSTANCE instance, UINT width, UINT height, int nCmdShow, HWND
 	RECT rt = { 0, 0, width, height };
 	AdjustWindowRect(&rt, WS_OVERLAPPEDWINDOW, FALSE);
 
-	window = CreateWindowEx(0, CLASS_NAME, L"TEST WINDOW", WS_OVERLAPPEDWINDOW,
+	window = CreateWindowEx(0, CLASS_NAME, L"Rasterizer Program", WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, 0, rt.right - rt.left, rt.bottom - rt.top, nullptr, nullptr, instance, nullptr);
 
 	if (window == nullptr)

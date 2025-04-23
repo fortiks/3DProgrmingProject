@@ -34,6 +34,7 @@ private:
     Graphics* graphics = nullptr;
     IDXGISwapChain* swapChain = nullptr;
     DepthBufferD3D11 depthStencilView;
+
     ID3D11RasterizerState* wireframeState;
     RenderTargetD3D11 renderTargetView;
 
